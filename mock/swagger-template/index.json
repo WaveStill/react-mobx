@@ -1,0 +1,48 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "App接口-swagger文档",
+    "version": "1.0.0",
+    "title": "App接口",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "xxx@xx.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "example.com",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "common",
+      "description": "通用接口"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "securityDefinitions": {
+    "petstore_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "http://petstore.swagger.io/oauth/dialog",
+      "flow": "implicit",
+      "scopes": {
+        "write:pets": "modify pets in your account",
+        "read:pets": "read your pets"
+      }
+    },
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {},
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

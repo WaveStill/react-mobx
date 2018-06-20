@@ -1,0 +1,19 @@
+{
+  "method": "get",
+  "url": "/person",
+  "tags": ["common"],
+  "description": "根据车辆Id查询车辆基本信息接口",
+  "parameter": {
+    "name": "zhangsan"
+  },
+  "response": {
+    "status": 0,
+    "msg": "success",
+    "data|4-10": [
+      {
+        "name": "zhangsan",
+        "age|+1": 13
+      }
+    ]
+  }
+}
